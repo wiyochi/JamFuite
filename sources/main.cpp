@@ -2,6 +2,7 @@
 #include "MiniGame/MiniGame.hpp"
 #include "MiniGame/Questions.hpp"
 #include "MiniGame/Readers/ReaderQuestions.hpp"
+#include "MiniGame/QTE.hpp"
 
 int main()
 {
@@ -9,6 +10,16 @@ int main()
 
     MiniGame* testQ = new Questions(1);
     int ind = 0;
+    MiniGame* testQTE = new QTE(10);
+    testQTE->start();
+
+    std::default_random_engine re;
+	std::uniform_int_distribution<int> distribKey{ 0 , 4 };
+
+    for(int i = 0; i < 20; i++)
+    {
+        std::cout << distribKey(re) << std::endl;
+    }
 
     while (window.isOpen())
     {
@@ -19,7 +30,8 @@ int main()
                 window.close();
         }
 
-
+        testQTE->update(window);
+        /*
         if(!testQ->end())
         {
             testQ->update(window);
@@ -30,11 +42,12 @@ int main()
             ind = (ind+1)%2;
             delete testQ;
             testQ = new Questions(ind+1);
-        }
+        }*/
 
         window.clear();
 
-        window.draw(*testQ);
+        window.draw(*testQTE);
+        //window.draw(*testQ);
 
         window.display();
     }
