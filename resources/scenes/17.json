@@ -1,10 +1,10 @@
 {
     "type": 0,
-    "name": "",
+    "name": "Couloir",
     "question": "Une porte est devant vous.",
     "answers": [
         "L'ouvrir",
         "Se méfier et faire demi-tour"
     ],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

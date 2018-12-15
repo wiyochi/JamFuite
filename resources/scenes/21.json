@@ -3,5 +3,5 @@
     "name": "Un couloir",
     "message": "Le garde vous a tué, apperement les vrais gardes ne commencent pas à pleurer pour une petite défaite.",
     "color": [255, 0, 0],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

@@ -2,5 +2,5 @@
     "type": 6,
     "name": "Une salle",
     "message": "Un garde qui vous défie sur une battaille de pouces !",
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/salle_1.png"
 }

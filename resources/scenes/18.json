@@ -1,9 +1,9 @@
 {
     "type": 0,
-    "name": "",
+    "name": "Couloir",
     "question": "Vous tombez nez à nez avec d'autres gardes.",
     "answers": [
         "Faire sa prière"
     ],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }
