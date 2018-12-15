@@ -15,6 +15,7 @@ public:
     int getScore();
 
 protected:
+    int m_id;
     bool m_end;
     int m_score;
     sf::Texture m_bgTexture;
