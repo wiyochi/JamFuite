@@ -90,7 +90,7 @@ void Questions::loadStrings()
 
 void Questions::draw(sf::RenderTarget& window, sf::RenderStates states) const
 {
-    window.draw(m_bg, states);
+    MiniGame::draw(window, states);
     window.draw(m_graphicQuestion, states);
     for(uint i = 0; i < m_graphicAnswers.size(); i++)
     {

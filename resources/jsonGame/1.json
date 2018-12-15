@@ -2,9 +2,9 @@
     "name": "Test1",
     "question": "quelle est la question?",
     "answers": [
-        "Reponse 1 wesh",
+        "Reponse 1 wesh\nzrbzoefbzupefb\nzefuzefoug\naoefbafpbapfub",
         "Reponse 2 zeubi",
-        "Reponse 3 la daronne de tovny"
+        "Reponse 3 la daronne de tovny\nzepibfpzebfuzebfzuob\nzeoufzoufebh"
     ],
     "bgpath": "resources/textures/Brick.png"
 }

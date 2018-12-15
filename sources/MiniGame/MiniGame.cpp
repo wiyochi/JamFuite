@@ -16,3 +16,9 @@ int MiniGame::getScore()
 {
     return m_score;
 }
+
+
+void MiniGame::draw(sf::RenderTarget& window, sf::RenderStates states) const
+{
+    window.draw(m_bg, states);
+}

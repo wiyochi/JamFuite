@@ -21,7 +21,7 @@ protected:
     sf::Texture m_bgTexture;
     sf::Sprite m_bg;
 
-    virtual void draw(sf::RenderTarget& window, sf::RenderStates states) const = 0;
+    void draw(sf::RenderTarget& window, sf::RenderStates states) const;
 
 };
 
