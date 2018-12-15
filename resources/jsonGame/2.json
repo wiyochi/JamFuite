@@ -1,0 +1,10 @@
+{
+    "name": "Test2",
+    "question": "QUESTION?",
+    "answers": [
+        "Reponse 71 wesh",
+        "Reponse 42 zeubi",
+        "Reponse 33 la daronne de tovny"
+    ],
+    "bgpath": "resources/textures/Grass.png"
+}
