@@ -1,10 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include "MiniGame/MiniGame.hpp"
+#include "MiniGame/Questions.hpp"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
+    
+    MiniGame* testQ = new Questions();
 
     while (window.isOpen())
     {
@@ -15,8 +17,20 @@ int main()
                 window.close();
         }
 
+
+        if(!testQ->end())
+        {
+            testQ->update(window);
+        }
+        else
+        {
+            std::cout << "Score final: " << testQ->getScore() << std::endl;
+        }
+
         window.clear();
-        window.draw(shape);
+
+        window.draw(*testQ);
+
         window.display();
     }
 
