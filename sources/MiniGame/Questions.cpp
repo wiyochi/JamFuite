@@ -1,7 +1,17 @@
 #include "Questions.hpp"
 
-Questions::Questions()
+ReaderQuestions Questions::m_reader;
+
+Questions::Questions(int id) : m_id(id)
 {
+    std::stringstream ss;
+    ss << "resources/jsonGame/" << m_id << ".json";
+    std::string str = ss.str();
+
+    std::cout << "FILE: " << str << std::endl;
+
+    m_reader.read(str);
+
     loadTextures();
     loadStrings();
     m_bg.setTexture(m_bgTexture);
@@ -44,10 +54,11 @@ void Questions::update(sf::Window& window)
 
 void Questions::loadTextures()
 {
-    if(!m_bgTexture.loadFromFile("resources/textures/Brick.png"))
+    if(!m_bgTexture.loadFromFile(m_reader.getBgPath()))
     {
         std::cout << "Fail load brick" << std::endl;
     }
+
     if(!m_font.loadFromFile("resources/font/unispace.ttf"))
     {
         std::cout << "Fail load font" << std::endl;
@@ -56,15 +67,12 @@ void Questions::loadTextures()
 
 void Questions::loadStrings()
 {
-    m_question = "Test ?";
+    m_question = m_reader.getQuestion();
     m_graphicQuestion.setString(m_question);
-    
-    m_answers.push_back("reponse 1");
-    m_answers.push_back("reponse 2");
-    m_answers.push_back("reponse 3");
 
-    for(uint i = 0; i < m_answers.size(); i++)
+    for(int i = 0; i < m_reader.nbAnswer(); i++)
     {
+        m_answers.push_back(m_reader.getAnswer(i));
         m_graphicAnswers.push_back(sf::Text());
         m_graphicAnswers[i].setString(m_answers[i]);
     }

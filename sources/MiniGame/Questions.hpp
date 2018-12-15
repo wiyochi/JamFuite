@@ -4,19 +4,24 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <sstream>
 #include <SFML/Graphics.hpp>
 #include "MiniGame.hpp"
+#include "Readers/ReaderQuestions.hpp"
 
 class Questions : public MiniGame
 {
 public:
-    Questions();
+    Questions(int id);
     void start();
     void update(sf::Window& window);
     void loadTextures();
     void loadStrings();
 
+    static ReaderQuestions m_reader;
+
 private:
+    int m_id;
     sf::Font m_font;
     std::vector<std::string> m_answers;
     std::vector<sf::Text> m_graphicAnswers;
