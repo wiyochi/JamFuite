@@ -8,13 +8,15 @@
 #include <vector>
 #include <set>
 
-class StoryTeller 
+class StoryTeller
 {
-    std::set<Node*> storyLine;
+    std::set<Node *> storyLine;
 
-    public:
-        void insertNode(int);
-        Node* getNode(int);
+  public:
+    void createNode(int);
+    Node *getNode(int);
+    std::set<Node *> accesCaca();
+    ~StoryTeller();
 };
 
 #endif // STORY_TELLER__H

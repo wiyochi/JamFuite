@@ -1,23 +1,33 @@
 #include "storyTeller.hpp"
 
-void StoryTeller::insertNode(int nodeId)
+void StoryTeller::createNode(int nodeId)
 {
     Node *n = new Node(nodeId);
     storyLine.insert(n);
 }
 
-Node* StoryTeller::getNode(int nodeId)
+Node *StoryTeller::getNode(int nodeId)
 {
-    Node* result = nullptr;
+    std::set<Node *>::iterator result;
 
-    for(Node* n : storyLine)
+    result = std::find_if(storyLine.begin(), storyLine.end(), [&nodeId](Node *n) -> bool {
+        return n->getNodeId() == nodeId;
+    });
+
+    return result == storyLine.end() ? nullptr : *result;
+}
+
+std::set<Node *> StoryTeller::accesCaca()
+{
+    return storyLine;
+}
+
+StoryTeller::~StoryTeller()
+{
+    std::set<Node *>::iterator it;
+
+    for (it = storyLine.begin(); it != storyLine.end(); it++)
     {
-        if(n->getNodeId() == nodeId)
-        {
-            result = n;
-            break;
-        }
+        delete *it;
     }
-
-    return result;
 }
