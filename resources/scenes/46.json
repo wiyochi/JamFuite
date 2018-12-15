@@ -1,0 +1,9 @@
+{
+    "type": 0,
+    "name": "Chambre du grand vilain",
+    "question": "Vous attendez sous le lit pendant environ 13h, vous commencez à avoir très faim.",
+    "answers": [
+        "Attendre... Encore..."
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

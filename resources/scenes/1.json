@@ -1,0 +1,10 @@
+{
+    "type": 1,
+    "name": "Introduction",
+    "question": "L'histoire que je vais vous conter se déroule en Amérique, dans le repère d'une organisation secrète de malfaiteurs. Ce sont les Méchants Américains Laids. Notre héros, Billy y avait était fait prisonnier mais avait réussit à se libérer avant d'être mis en cellule. Voilà comment il s'est échappé",
+    "answers": [
+        "Aller à gauche",
+        "Aller à droite"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

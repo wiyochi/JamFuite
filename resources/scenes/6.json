@@ -1,0 +1,11 @@
+{
+    "type": 0,
+    "name": "Couloir",
+    "question": "Vous entrez dans un couloir et croisez une autre personne.",
+    "answers": [
+        "Parler de futilité",
+        "Dire que vous êtes nouveau et perdu",
+        "Le tuer"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

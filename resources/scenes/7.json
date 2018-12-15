@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Une belle pièce avec des ornements du XVeme",
+    "message": "Vous êtes resté coincé, toutes les portes sont fermées.",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

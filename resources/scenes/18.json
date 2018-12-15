@@ -1,0 +1,9 @@
+{
+    "type": 0,
+    "name": "",
+    "question": "Vous tombez nez à nez avec d'autres gardes.",
+    "answers": [
+        "Faire sa prière"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

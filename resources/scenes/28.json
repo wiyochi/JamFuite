@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Cantine",
+    "message": "Elle est flattée et te tue. (Vraiment on sait pas pourquoi)",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

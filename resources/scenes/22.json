@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Un couloir",
+    "message": "Le garde s'énerve et vous tue.",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

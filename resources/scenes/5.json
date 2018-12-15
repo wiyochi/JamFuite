@@ -1,0 +1,9 @@
+{
+    "type": 0,
+    "name": "Couloir",
+    "question": "La porte suivante est fermée",
+    "answers": [
+        "Faire demi-tour"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

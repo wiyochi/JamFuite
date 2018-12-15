@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Entrepot",
+    "message": "Vous avez réussit à trouver un plan, cependant vous avez perdu trop de temps à le lire et on vous a trouvé...",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

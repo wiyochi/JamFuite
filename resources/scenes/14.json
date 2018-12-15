@@ -1,0 +1,9 @@
+{
+    "type": 0,
+    "name": "",
+    "question": "Un cri retentit, vous vous retournez.",
+    "answers": [
+        "Oupsi, doupsi : des gardes !!!"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

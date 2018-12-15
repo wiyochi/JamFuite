@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Devant la porte au fond du long couloir",
+    "message": "L'alarme s'est déclenchée, vous êtes donc fait prisonnier pour de bon",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

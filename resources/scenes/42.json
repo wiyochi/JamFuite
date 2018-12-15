@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Chambre du grand vilain",
+    "message": "Vous êtes mort dans l'explosion, évidemment...",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

@@ -1,0 +1,10 @@
+{
+    "type": 0,
+    "name": "",
+    "question": "Dans la quantine il y a une femme de ménage (la daronne de tovny), que faire ?",
+    "answers": [
+        "La draguer",
+        "L'ignorer"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}
