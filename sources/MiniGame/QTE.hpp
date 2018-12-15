@@ -1,23 +1,20 @@
-#ifndef _SPACE_INVADER_
-#define _SPACE_INVADER_
+#ifndef _QTE_
+#define _QTE_
 
-#include <vector>
-#include <string>
 #include <SFML/Graphics.hpp>
 #include "MiniGame.hpp"
 
-class SpaceInvader : public MiniGame
+class QTE : public MiniGame
 {
 public:
-    SpaceInvader();
+    QTE();
     void start();
     void update(sf::Window& window);
-    bool end();
 
 private:
+    sf::Clock m_clock;
 
     void draw(sf::RenderTarget& window, sf::RenderStates states) const;
-
 };
 
-#endif // !_SPACE_INVADER_
+#endif // !_QTE_

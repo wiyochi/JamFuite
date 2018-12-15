@@ -1,14 +1,13 @@
 #include "Questions.hpp"
 
 ReaderQuestions Questions::m_reader;
+bool Questions::m_keyPressed = false;
 
 Questions::Questions(int id) : m_id(id)
 {
     std::stringstream ss;
     ss << "resources/jsonGame/" << m_id << ".json";
     std::string str = ss.str();
-
-    std::cout << "FILE: " << str << std::endl;
 
     m_reader.read(str);
 
@@ -21,6 +20,7 @@ Questions::Questions(int id) : m_id(id)
     m_graphicQuestion.setFillColor(sf::Color::White);
     for(uint i = 0; i < m_graphicAnswers.size(); i++)
     {
+        std::cout << i << std::endl;
         m_graphicAnswers[i].setFont(m_font);
         m_graphicAnswers[i].setPosition(100, 100 + i*50);
         m_graphicAnswers[i].setCharacterSize(15);
@@ -35,20 +35,29 @@ void Questions::start()
 
 void Questions::update(sf::Window& window)
 {
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1))
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1) && !m_keyPressed)
     {
         m_score = 1;
         m_end = true;
+        m_keyPressed = true;
     }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2))
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2) && !m_keyPressed)
     {
         m_score = 2;
         m_end = true;
+        m_keyPressed = true;
     }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad3))
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad3) && !m_keyPressed)
     {
         m_score = 3;
         m_end = true;
+        m_keyPressed = true;
+    }
+    else if(!sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1)\
+            && !sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2)\
+            && !sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad3))
+    {
+        m_keyPressed = false;
     }
 }
 
@@ -56,7 +65,7 @@ void Questions::loadTextures()
 {
     if(!m_bgTexture.loadFromFile(m_reader.getBgPath()))
     {
-        std::cout << "Fail load brick" << std::endl;
+        std::cout << "Fail load texture" << std::endl;
     }
 
     if(!m_font.loadFromFile("resources/font/unispace.ttf"))

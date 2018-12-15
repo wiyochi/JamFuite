@@ -19,6 +19,7 @@ public:
     void loadStrings();
 
     static ReaderQuestions m_reader;
+    static bool m_keyPressed;
 
 private:
     int m_id;

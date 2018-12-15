@@ -5,12 +5,10 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
-    
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Fuit Billy!!");
+
     MiniGame* testQ = new Questions(1);
-    ReaderQuestions rd;
-    rd.read("resources/jsonGame/2.json");
-    rd.debug();
+    int ind = 0;
 
     while (window.isOpen())
     {
@@ -28,7 +26,10 @@ int main()
         }
         else
         {
-            std::cout << "Score final: " << testQ->getScore() << std::endl;
+            std::cout << "[" << ind << "]Score final: " << testQ->getScore() << std::endl;
+            ind = (ind+1)%2;
+            delete testQ;
+            testQ = new Questions(ind+1);
         }
 
         window.clear();

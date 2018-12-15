@@ -7,9 +7,10 @@ ReaderQuestions::ReaderQuestions()
 
 void ReaderQuestions::read(std::string filename)
 {
-    std::cout << "FILE2: " << filename << std::endl;
     std::ifstream file(filename, std::ios::in);
     std::string str;
+
+    m_answers.clear();
 
     if(file)
     {
