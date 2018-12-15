@@ -1,0 +1,11 @@
+{
+    "type": 0,
+    "name": "Cantine",
+    "question": "Vous discutez avec la femme de ménage.",
+    "answers": [
+        "T'es belle mademoiselle",
+        "T'es bien mignonne, t'as pas un 06 ?",
+        "Il te reste des jambons/fromage ?"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

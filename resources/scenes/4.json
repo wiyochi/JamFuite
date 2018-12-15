@@ -1,0 +1,10 @@
+{
+    "type": 0,
+    "name": "Couloir",
+    "question": "Vous fouillez le corps.",
+    "answers": [
+        "Prendre son arme",
+        "Prendre son badge"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

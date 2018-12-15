@@ -1,0 +1,7 @@
+{
+    "type": 2,
+    "name": "Couloir",
+    "message": "Vous êtes mort, c'est vraiment triste mais personne ne le sauras jamais.",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/Brick.png"
+}

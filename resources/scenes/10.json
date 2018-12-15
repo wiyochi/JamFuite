@@ -1,0 +1,10 @@
+{
+    "type": 0,
+    "name": "Couloir",
+    "question": "Il se moque de vous.",
+    "answers": [
+        "S'énerver contre lui",
+        "Rester calme"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

@@ -1,0 +1,10 @@
+{
+    "type": 0,
+    "name": "Chambre du grand vilain",
+    "question": "Vous venez d'entrer dans la chambre du grand vilain. Que voulez-vous faire ?",
+    "answers": [
+        "Lui tendre un piège",
+        "Utiliser le lance-roquettes pour détruire son lit"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

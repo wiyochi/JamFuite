@@ -1,0 +1,10 @@
+{
+    "type": 0,
+    "name": "",
+    "question": "Une porte est devant vous.",
+    "answers": [
+        "L'ouvrir",
+        "Se méfier et faire demi-tour"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

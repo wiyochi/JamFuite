@@ -1,0 +1,10 @@
+{
+    "type": 0,
+    "name": "",
+    "question": "Il a confiance en vous.",
+    "answers": [
+        "En profiter pour le trahir et le tuer",
+        "Raconter un mensonge pour partir"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

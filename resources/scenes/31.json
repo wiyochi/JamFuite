@@ -1,0 +1,7 @@
+{
+    "type": 3,
+    "name": "Une pièce particulièrement mal rangée",
+    "period": 500,
+    "max": 30000,
+    "bgpath": "resources/textures/Brick.png"
+}

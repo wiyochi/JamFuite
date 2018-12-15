@@ -1,0 +1,11 @@
+{
+    "type": 0,
+    "name": "Une salle du complexe",
+    "question": "Vous apercevez une personne. Que voulez-vous faire ?",
+    "answers": [
+        "La suivre",
+        "La tuer",
+        "Vous cachez en attendant qu'elle parte"
+    ],
+    "bgpath": "resources/textures/Brick.png"
+}

@@ -1,0 +1,7 @@
+{
+    "type": 3,
+    "name": "Couloir",
+    "period": 500,
+    "max": 15,
+    "bgpath": "resources/textures/Brick.png"
+}
