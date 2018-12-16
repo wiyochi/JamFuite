@@ -41,15 +41,9 @@ int main()
 
     rs.loadAndInjectData("./resources/story.json", st);
 
+    n = st.getNode(state);
     MiniGame * game = new Questions(state);
     game->start();
-
-/*
-    MiniGame* testQ = new Questions(1);
-    int ind = 0;
-    MiniGame* testQTE = new QTE(10, 3000);
-    testQTE->start();
-*/
 
     while (window.isOpen())
     {
@@ -62,9 +56,16 @@ int main()
         if (!game->end())
         {
             game->update(window);
-        } else
+        }
+        else
         {
+            //n = n->getNode(game->getScore());
             n = st.getNode(game->getScore());
+
+            if(n == nullptr)
+            {
+                std::cout << "NULL" << std::endl;
+            }
             state = n->getNodeId();
             std::cout << "STATE new : " << state << std::endl;
             delete game;
@@ -77,7 +78,7 @@ int main()
                     //game = new EndGame(state);
                     break;
                 case 3:
-                    game = new QTE(state);
+                    game = new QTE(10, 3000);
                     break;
                 case 4:
                     //game = new CodeGame(state);
