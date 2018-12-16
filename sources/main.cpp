@@ -5,6 +5,7 @@
 #include "MiniGame/QTE.hpp"
 #include "MiniGame/Readers/ReaderStoryLine.hpp"
 #include "StoryTeller/storyTeller.hpp"
+#include "MiniGame/EndGame.hpp"
 
 
 int getGameType(int state)
@@ -74,7 +75,7 @@ int main()
                     game = new Questions(state);
                     break;
                 case 2:
-                    //game = new EndGame(state);
+                    game = new EndGame(state);
                     break;
                 case 3:
                     switch (state)
