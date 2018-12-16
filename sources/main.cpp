@@ -10,16 +10,8 @@ int main()
 
     MiniGame* testQ = new Questions(1);
     int ind = 0;
-    MiniGame* testQTE = new QTE(10);
+    MiniGame* testQTE = new QTE(10, 3000);
     testQTE->start();
-
-    std::default_random_engine re;
-	std::uniform_int_distribution<int> distribKey{ 0 , 4 };
-
-    for(int i = 0; i < 20; i++)
-    {
-        std::cout << distribKey(re) << std::endl;
-    }
 
     while (window.isOpen())
     {
