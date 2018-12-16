@@ -11,13 +11,13 @@ int getGameType(int state)
 {
     int type = 0;
     if (state == 34 || state == 20)
-        type = 6;
+        type = 3;
     else if (state == 31 ||state == 11 || state == 48 || state == 15)
         type = 3;
     else if (state == 38)
-        type = 5;
+        type = 3;
     else if (state == 23 || state == 43)
-        type = 4;
+        type = 3;
     else if (state == 3 || state == 7 || state == 8 
             || state == 12 || state == 13 || state == 19
             || state == 21 || state == 22 || state == 24
@@ -26,14 +26,13 @@ int getGameType(int state)
             || state == 37 || state == 39 || state == 42
             || state == 44 || state == 47 || state == 50)
         type = 2;
-    
     return type;
 }
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 800), "Fuit Billy!!");
-
+    bool debug = true;
     int state = 1;
     StoryTeller st;
     ReaderStoryLine rs;
@@ -41,23 +40,7 @@ int main()
 
     rs.loadAndInjectData("./resources/story.json", st);
 
-    std::cout << "####################################################" << std::endl;
-    for(auto node : st.accesCaca())
-    {
-        std::cout << "Node: " << node->getNodeId() << " :" << std::endl;
-        for(auto child : node->getNodes())
-        {
-            std::cout << "\t" << child->getNodeId();
-        }
-        std::cout << std::endl;
-    }
-
     n = st.getNode(state);
-
-    for(auto no : n->getNodes())
-    {
-        std::cout << "Child: " << no->getNodeId() << std::endl;
-    }
 
     MiniGame * game = new Questions(state);
     game->start();
@@ -69,31 +52,21 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+            else if (event.type == sf::Event::KeyReleased)
+                if (event.key.code == sf::Keyboard::D)
+                {
+                    debug = !debug;
+                    std::cout << "debug switch" << std::endl;
+                }
         }
         if (!game->end())
         {
             game->update(window);
-        }
-        else
+        } else
         {
-            std::cout << "Input : " << game->getScore() << std::endl;;
+            std::cout << "Score:" << game->getScore() << std::endl;
             n = n->getNode(game->getScore());
-            //n = st.getNode(game->getScore());
-
-            if(n == nullptr)
-            {
-                std::cout << "NULL" << std::endl;
-            }
-
-            std::cout << "NodeInfo: " << n->getNodeId() << "[";
-            for(Node* child : n->getNodes())
-            {
-                std::cout << child->getNodeId() << ",";
-            }
-            std::cout << "]" << std::endl;
-
             state = n->getNodeId();
-            std::cout << "STATE new : " << state << std::endl;
             delete game;
             switch (getGameType(state))
             {
@@ -104,16 +77,37 @@ int main()
                     //game = new EndGame(state);
                     break;
                 case 3:
-                    game = new QTE(10, 3000, new int[2]{33, 32});
-                    break;
-                case 4:
-                    //game = new CodeGame(state);
-                    break;
-                case 5:
-                    //game = new Sokoban(state);
-                    break;
-                case 6:
-                    //game = new Clicker(state);
+                    switch (state)
+                    {
+                        case 11:
+                            game = new QTE(5, 1000, new int[2]{14, 13});
+                            break;
+                        case 15: 
+                            game = new QTE(5, 1000, new int[2]{17, 16});
+                            break;
+                        case 31: 
+                            game = new QTE(5, 1000, new int[2]{33, 32});
+                            break;
+                        case 48:
+                            game = new QTE(5, 1000, new int[2]{49, 50});
+                            break;
+                        case 23:
+                            game = new QTE(5, 1000, new int[2]{25, 24});
+                            break;
+                        case 43:
+                            game = new QTE(5, 1000, new int[2]{45, 44});
+                            break;
+                        case 38:
+                            game = new QTE(5, 1000, new int[2]{39, 40});
+                            break;
+                        case 20:
+                            game = new QTE(5, 1000, new int[2]{22, 21});
+                            break;
+                        case 34:
+                            game = new QTE(5, 1000, new int[2]{35, 36});
+                            break;
+
+                    }
                     break;
             }
             game->start();
@@ -122,30 +116,29 @@ int main()
         window.clear();
         window.draw(*game);
 
+        sf::Text t;
+        std::stringstream ss;
+        ss << "Etat " << state;
+        std::string str = ss.str();
+        sf::Font m_font;
+        if(!m_font.loadFromFile("resources/font/unispace.ttf"))
+        {
+            std::cout << "Fail load font" << std::endl;
+        }
+
+        t.setString(str);
+        t.setFont(m_font);
+        t.setPosition(10, 10);
+        t.setFillColor(sf::Color::Red);
+        t.setCharacterSize(15);
+
+        if (debug)
+        {
+            window.draw(t);
+        }
+
         window.display();
     }
 
     return 0;
 }
-    //MiniGame* testQ = new Questions(1);
-    //int ind = 0;
-   // MiniGame* testQTE = new QTE(10);
-    //testQTE->start();
-
-
-        /*
-        testQTE->update(window);
-        
-        if(!testQ->end())
-        {
-            testQ->update(window);
-        }
-        else
-        {
-            std::cout << "[" << ind << "]Score final: " << testQ->getScore() << std::endl;
-            ind = (ind+1)%2;
-            delete testQ;
-            testQ = new Questions(ind+1);
-        }*/
-       // window.draw(*testQTE);
-        //window.draw(*testQ);

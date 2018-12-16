@@ -12,6 +12,8 @@ QTE::QTE(int nb, int period, int resNode[2]) :
     nodeWin(resNode[0]),
     nodeLose(resNode[1])
 {
+  //  resNode[0] = resNode[0] - 1;
+  //  resNode[1] = resNode[1] - 1;
     srand(time(NULL));
 
     if(!m_font.loadFromFile("resources/font/unispace.ttf"))

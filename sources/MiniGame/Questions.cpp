@@ -82,7 +82,7 @@ void Questions::loadStrings()
     {
         m_answers.push_back(m_reader.getAnswer(i));
         m_graphicAnswers.push_back(sf::Text());
-        m_graphicAnswers[i].setString(m_answers[i]);
+        m_graphicAnswers[i].setString((m_answers[i]));
     }
 }
 

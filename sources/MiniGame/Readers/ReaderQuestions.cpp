@@ -35,8 +35,11 @@ void ReaderQuestions::read(std::string filename)
 
     rapidjson::Value &tab = d["answers"];
     for (rapidjson::SizeType i = 0; i < tab.Size(); i++)
-    {
-        m_answers.push_back(tab[i].GetString());
+    {    
+        std::stringstream ss;
+        ss << i + 1<< ") " << tab[i].GetString();
+        std::string str = ss.str();
+        m_answers.push_back(str);
     }
 }
 
