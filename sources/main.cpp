@@ -5,6 +5,7 @@
 #include "MiniGame/QTE.hpp"
 #include "MiniGame/Readers/ReaderStoryLine.hpp"
 #include "StoryTeller/storyTeller.hpp"
+#include "MiniGame/EndGame.hpp"
 
 
 int getGameType(int state)
@@ -79,6 +80,7 @@ int main()
             std::cout << "Input : " << game->getScore() << std::endl;;
             n = n->getNode(game->getScore());
             //n = st.getNode(game->getScore());
+            n = st.accesCaca()[49];
 
             if(n == nullptr)
             {
@@ -101,7 +103,7 @@ int main()
                     game = new Questions(state);
                     break;
                 case 2:
-                    //game = new EndGame(state);
+                    game = new EndGame(state);
                     break;
                 case 3:
                     game = new QTE(10, 3000, new int[2]{33, 32});
