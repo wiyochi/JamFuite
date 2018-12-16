@@ -10,13 +10,14 @@
 
 class StoryTeller
 {
-    std::set<Node *> storyLine;
+  std::set<Node *> storyLine;
 
-  public:
-    void createNode(int);
-    Node *getNode(int);
-    std::set<Node *> accesCaca();
-    ~StoryTeller();
+public:
+  Node *createNode(int);
+  Node *getNode(int);
+  void createNodeAndDependencies(int, std::vector<int>);
+  std::set<Node *> accesCaca();
+  ~StoryTeller();
 };
 
 #endif // STORY_TELLER__H
