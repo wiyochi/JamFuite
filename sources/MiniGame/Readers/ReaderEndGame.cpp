@@ -23,7 +23,6 @@ void ReaderEndGame::read(std::string filename)
     }
 
     const char *json = str.c_str();
-
     rapidjson::Document d;
     d.Parse(json);
 
@@ -36,6 +35,8 @@ void ReaderEndGame::read(std::string filename)
     {
         m_color.push_back(tab[i].GetInt());
     }
+
+    debug();
 }
 
 void ReaderEndGame::debug()

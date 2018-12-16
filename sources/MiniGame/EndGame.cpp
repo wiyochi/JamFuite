@@ -4,6 +4,7 @@ ReaderEndGame EndGame::reader;
 
 EndGame::EndGame(int id) : m_id(id)
 {
+    std::cout << "KALASH" << std::endl;
     std::stringstream ss;
     ss << "resources/scenes/" << m_id << ".json";
     std::string str = ss.str();

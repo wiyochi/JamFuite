@@ -80,13 +80,13 @@ void QTE::update(sf::Window& window)
     if(m_endQTE)
     {
         m_graphicKey.setString("PERDU!");
-        m_score = nodeLose;
+        m_score = 1+1;
         m_end = true;
     }
 
     if(m_cpt >= m_nbOfKey)
     {
-        m_score = nodeWin;
+        m_score = 0+1;
         m_graphicKey.setString("GAGNE!");
         m_end = true;
     }

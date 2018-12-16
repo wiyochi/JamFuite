@@ -24,7 +24,7 @@ int getGameType(int state)
             || state == 21 || state == 22 || state == 24
             || state == 26 || state == 28 || state == 29
             || state == 30 || state == 32 || state == 33
-            || state == 37 || state == 39 || state == 42
+            || state == 36 || state == 37 || state == 39 || state == 42
             || state == 44 || state == 47 || state == 50)
         type = 2;
     return type;
@@ -46,6 +46,7 @@ int main()
     MiniGame * game = new Questions(state);
     game->start();
 
+    std::cout << "KALASH1" << std::endl;
     while (window.isOpen())
     {
         sf::Event event;
@@ -75,37 +76,39 @@ int main()
                     game = new Questions(state);
                     break;
                 case 2:
+    std::cout << "KALASHKLA" << std::endl;
                     game = new EndGame(state);
+    std::cout << "KALASfdffHKLA" << std::endl;
                     break;
                 case 3:
                     switch (state)
                     {
                         case 11:
-                            game = new QTE(5, 1000, new int[2]{14, 13});
+                            game = new QTE(5, 3000, new int[2]{14, 13});
                             break;
                         case 15: 
-                            game = new QTE(5, 1000, new int[2]{17, 16});
+                            game = new QTE(5, 3000, new int[2]{17, 16});
                             break;
                         case 31: 
-                            game = new QTE(5, 1000, new int[2]{33, 32});
+                            game = new QTE(5, 3000, new int[2]{33, 32});
                             break;
                         case 48:
-                            game = new QTE(5, 1000, new int[2]{49, 50});
+                            game = new QTE(5, 3000, new int[2]{49, 50});
                             break;
                         case 23:
-                            game = new QTE(5, 1000, new int[2]{25, 24});
+                            game = new QTE(5, 3000, new int[2]{25, 24});
                             break;
                         case 43:
-                            game = new QTE(5, 1000, new int[2]{45, 44});
+                            game = new QTE(5, 3000, new int[2]{45, 44});
                             break;
                         case 38:
-                            game = new QTE(5, 1000, new int[2]{39, 40});
+                            game = new QTE(5, 3000, new int[2]{39, 40});
                             break;
                         case 20:
-                            game = new QTE(5, 1000, new int[2]{22, 21});
+                            game = new QTE(5, 3000, new int[2]{22, 21});
                             break;
                         case 34:
-                            game = new QTE(5, 1000, new int[2]{35, 36});
+                            game = new QTE(5, 3000, new int[2]{35, 36});
                             break;
 
                     }
