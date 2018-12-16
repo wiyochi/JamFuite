@@ -34,7 +34,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(1200, 800), "Fuit Billy!!");
     bool debug = true;
-    int state = 46;
+    int state = 1;
     StoryTeller st;
     ReaderStoryLine rs;
     Node * n;
