@@ -6,7 +6,7 @@ bool Questions::m_keyPressed = false;
 Questions::Questions(int id) : m_id(id)
 {
     std::stringstream ss;
-    ss << "resources/jsonGame/" << m_id << ".json";
+    ss << "resources/scenes/" << m_id << ".json";
     std::string str = ss.str();
 
     m_reader.read(str);
@@ -35,19 +35,19 @@ void Questions::start()
 
 void Questions::update(sf::Window& window)
 {
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1) && !m_keyPressed)
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1) && !m_keyPressed && m_reader.nbAnswer() >= 1)
     {
         m_score = 1;
         m_end = true;
         m_keyPressed = true;
     }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2) && !m_keyPressed)
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2) && !m_keyPressed && m_reader.nbAnswer() >= 2)
     {
         m_score = 2;
         m_end = true;
         m_keyPressed = true;
     }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad3) && !m_keyPressed)
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad3) && !m_keyPressed && m_reader.nbAnswer() >= 3)
     {
         m_score = 3;
         m_end = true;

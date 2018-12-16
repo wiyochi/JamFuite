@@ -1,7 +1,7 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1544874093756" ID="ID_1383150303" MODIFIED="1544893231579" STYLE="fork" TEXT="Intro (1)">
-<node CREATED="1544874240372" FOLDED="true" ID="ID_639768211" MODIFIED="1544902759406" POSITION="right" STYLE="fork" TEXT="gauche">
+<node CREATED="1544874093756" ID="ID_1383150303" MODIFIED="1544908424541" STYLE="fork" TEXT="Intro (1)">
+<node CREATED="1544874240372" ID="ID_639768211" MODIFIED="1544908427675" POSITION="right" STYLE="fork" TEXT="gauche">
 <node CREATED="1544874313508" ID="ID_483809428" MODIFIED="1544901844692" STYLE="bubble" TEXT="Cliqueur Baston (34)">
 <icon BUILTIN="licq"/>
 <node CREATED="1544879754857" ID="ID_168400362" MODIFIED="1544880813541" STYLE="fork" TEXT="Victoire">
@@ -37,7 +37,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1544889922514" FOLDED="true" ID="ID_1949687832" MODIFIED="1544895747983" STYLE="fork" TEXT="Utiliser le lance rocket pour tout d&#xe9;truire">
+<node CREATED="1544889922514" ID="ID_1949687832" MODIFIED="1544908427676" STYLE="fork" TEXT="Utiliser le lance rocket pour tout d&#xe9;truire">
 <node CREATED="1544890022526" ID="ID_1047706276" MODIFIED="1544890044294" STYLE="bubble" TEXT="Vous mourrez avec dignit&#xe9; (47)">
 <icon BUILTIN="stop-sign"/>
 <icon BUILTIN="button_ok"/>
@@ -45,7 +45,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1544889755675" FOLDED="true" ID="ID_1405869446" MODIFIED="1544896637871" STYLE="fork" TEXT="D&#xe9;faite">
+<node CREATED="1544889755675" ID="ID_1405869446" MODIFIED="1544908427676" STYLE="fork" TEXT="D&#xe9;faite">
 <node CREATED="1544889799204" ID="ID_1112137067" MODIFIED="1544889852636" STYLE="bubble" TEXT="Alarme d&#xe9;clench&#xe9;e (44)">
 <icon BUILTIN="stop-sign"/>
 </node>
@@ -54,7 +54,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1544879858119" FOLDED="true" ID="ID_667930121" MODIFIED="1544899511909" STYLE="fork" TEXT="Chercher au plus vite une porte pour en sortir">
+<node CREATED="1544879858119" ID="ID_667930121" MODIFIED="1544908427677" STYLE="fork" TEXT="Chercher au plus vite une porte pour en sortir">
 <node CREATED="1544887790810" ID="ID_29097158" MODIFIED="1544893234937" STYLE="bubble" TEXT="Sokoban (38)">
 <icon BUILTIN="licq"/>
 <node CREATED="1544887822963" ID="ID_1817555122" MODIFIED="1544887855231" STYLE="fork" TEXT="Victoire">
@@ -69,7 +69,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1544879870765" FOLDED="true" ID="ID_842167142" MODIFIED="1544897591957" STYLE="fork" TEXT="Chercher un plan de la base">
+<node CREATED="1544879870765" ID="ID_842167142" MODIFIED="1544908427677" STYLE="fork" TEXT="Chercher un plan de la base">
 <node CREATED="1544887708144" ID="ID_1522801169" MODIFIED="1544887757649" TEXT="Vous en trouvez un, on vous surprend pendant la lecture (37)">
 <icon BUILTIN="stop-sign"/>
 </node>
@@ -92,15 +92,15 @@
 </node>
 <node CREATED="1544874983066" ID="ID_843236082" MODIFIED="1544880813541" STYLE="fork" TEXT="Tuer le PNJ">
 <node CREATED="1544880886686" ID="ID_397607539" MODIFIED="1544893234938" STYLE="bubble" TEXT="Fouillage du corps (4)">
-<node CREATED="1544880921247" FOLDED="true" ID="ID_1674326852" MODIFIED="1544899595400" STYLE="fork" TEXT="Prendre arme">
+<node CREATED="1544880921247" ID="ID_1674326852" MODIFIED="1544908427678" STYLE="fork" TEXT="Prendre arme">
 <node CREATED="1544881007253" ID="ID_588160013" MODIFIED="1544887243305" STYLE="bubble" TEXT="Avancer dans le couloir shooter timing (31)">
 <icon BUILTIN="licq"/>
-<node CREATED="1544887000406" FOLDED="true" ID="ID_82286607" MODIFIED="1544899442022" STYLE="fork" TEXT="Victoire">
+<node CREATED="1544887000406" ID="ID_82286607" MODIFIED="1544908427678" STYLE="fork" TEXT="Victoire">
 <node CREATED="1544887338134" ID="ID_173438955" MODIFIED="1544887534461" STYLE="bubble" TEXT="Billy est bless&#xe9; &#xe0; la jambe, vous avancez un peu et oups vous etes mort (33)">
 <icon BUILTIN="stop-sign"/>
 </node>
 </node>
-<node CREATED="1544887163668" FOLDED="true" ID="ID_353027453" MODIFIED="1544899441519" STYLE="fork" TEXT="D&#xe9;faite">
+<node CREATED="1544887163668" ID="ID_353027453" MODIFIED="1544908427678" STYLE="fork" TEXT="D&#xe9;faite">
 <node CREATED="1544887270284" ID="ID_1830036340" MODIFIED="1544887444954" STYLE="bubble" TEXT="t mort (32)">
 <icon BUILTIN="stop-sign"/>
 </node>
@@ -124,9 +124,9 @@
 <icon BUILTIN="button_ok"/>
 <node CREATED="1544885122603" ID="ID_284868169" MODIFIED="1544885481171" STYLE="bubble" TEXT="JUNGLE"/>
 </node>
-<node CREATED="1544883057669" FOLDED="true" ID="ID_52662626" MODIFIED="1544902979579" STYLE="fork" TEXT="Vous d&#xe9;cidez de retourner &#xe0; l&apos;int&#xe9;rieur">
+<node CREATED="1544883057669" ID="ID_52662626" MODIFIED="1544908427678" STYLE="fork" TEXT="Vous d&#xe9;cidez de retourner &#xe0; l&apos;int&#xe9;rieur">
 <node CREATED="1544883091229" ID="ID_670058949" MODIFIED="1544902958166" STYLE="bubble" TEXT="D&apos;autres gardes sont l&#xe0; (18)">
-<node CREATED="1544883108808" FOLDED="true" ID="ID_196633078" MODIFIED="1544902848456" STYLE="fork" TEXT="D&#xe9;faite">
+<node CREATED="1544883108808" ID="ID_196633078" MODIFIED="1544908427679" STYLE="fork" TEXT="D&#xe9;faite">
 <node CREATED="1544883112515" ID="ID_170896226" MODIFIED="1544883821394" STYLE="bubble" TEXT="Mort (19)">
 <icon BUILTIN="stop-sign"/>
 </node>
@@ -160,8 +160,8 @@
 </node>
 <node CREATED="1544881308690" ID="ID_83567341" MODIFIED="1544882543868" STYLE="fork" TEXT="Lui dire que tu es nouveau et perdu">
 <node CREATED="1544883159424" ID="ID_718722624" MODIFIED="1544893234940" STYLE="bubble" TEXT="Il se moque (10)">
-<node CREATED="1544883170395" FOLDED="true" ID="ID_1434982228" MODIFIED="1544902790842" STYLE="fork" TEXT="S&apos;&#xe9;nerver">
-<node CREATED="1544883234027" FOLDED="true" ID="ID_1767828575" MODIFIED="1544902787132" STYLE="bubble" TEXT="Mini jeu battaille de regard (20)">
+<node CREATED="1544883170395" ID="ID_1434982228" MODIFIED="1544908400251" STYLE="fork" TEXT="S&apos;&#xe9;nerver">
+<node CREATED="1544883234027" ID="ID_1767828575" MODIFIED="1544908402052" STYLE="bubble" TEXT="Mini jeu battaille de regard (20)">
 <icon BUILTIN="licq"/>
 <node CREATED="1544883261200" ID="ID_367767352" MODIFIED="1544883272312" STYLE="fork" TEXT="Victoire">
 <node CREATED="1544885509331" ID="ID_630206078" MODIFIED="1544885550817" STYLE="bubble" TEXT="Vous l&apos;avez mis en col&#xe8;re et il vous tue (22)">
@@ -175,31 +175,31 @@
 </node>
 </node>
 </node>
-<node CREATED="1544883182198" FOLDED="true" ID="ID_897694501" MODIFIED="1544902790109" STYLE="fork" TEXT="Rester calme">
-<node CREATED="1544883231601" FOLDED="true" ID="ID_396254451" MODIFIED="1544902335129" STYLE="bubble" TEXT="Continue chemin : Mini jeu porte a code (deviner) (23)">
+<node CREATED="1544883182198" ID="ID_897694501" MODIFIED="1544908399635" STYLE="fork" TEXT="Rester calme">
+<node CREATED="1544883231601" ID="ID_396254451" MODIFIED="1544908402696" STYLE="bubble" TEXT="Continue chemin : Mini jeu porte a code (deviner) (23)">
 <icon BUILTIN="licq"/>
-<node CREATED="1544885618469" FOLDED="true" ID="ID_574992644" MODIFIED="1544901705523" STYLE="fork" TEXT="Bon code">
-<node CREATED="1544885761165" FOLDED="true" ID="ID_1327190484" MODIFIED="1544901702843" STYLE="bubble" TEXT=" Cantine, discussion avec la femme de m&#xe9;nage (25)">
-<node CREATED="1544885877566" FOLDED="true" ID="ID_1930504205" MODIFIED="1544901602429" STYLE="fork" TEXT="Draguer la femme de m&#xe9;nage">
-<node CREATED="1544886524886" FOLDED="true" ID="ID_1045449221" MODIFIED="1544901520244" STYLE="bubble" TEXT="Discussion (27)">
-<node CREATED="1544886541071" FOLDED="true" ID="ID_733981927" MODIFIED="1544901420727" STYLE="fork" TEXT="T&apos;es belle mademoiselle">
+<node CREATED="1544885618469" ID="ID_574992644" MODIFIED="1544908404645" STYLE="fork" TEXT="Bon code">
+<node CREATED="1544885761165" ID="ID_1327190484" MODIFIED="1544908405353" STYLE="bubble" TEXT=" Cantine, discussion avec la femme de m&#xe9;nage (25)">
+<node CREATED="1544885877566" ID="ID_1930504205" MODIFIED="1544908406540" STYLE="fork" TEXT="Draguer la femme de m&#xe9;nage">
+<node CREATED="1544886524886" ID="ID_1045449221" MODIFIED="1544908407890" STYLE="bubble" TEXT="Discussion (27)">
+<node CREATED="1544886541071" ID="ID_733981927" MODIFIED="1544908409586" STYLE="fork" TEXT="T&apos;es belle mademoiselle">
 <node CREATED="1544886646649" ID="ID_1252871868" MODIFIED="1544886788141" STYLE="bubble" TEXT="Elle est flatt&#xe9;e et te tue (28)">
 <icon BUILTIN="stop-sign"/>
 </node>
 </node>
-<node CREATED="1544886551868" FOLDED="true" ID="ID_917619023" MODIFIED="1544901421848" STYLE="fork" TEXT="t&apos;es bien mignonne madame t&apos;as un 06">
+<node CREATED="1544886551868" ID="ID_917619023" MODIFIED="1544908410040" STYLE="fork" TEXT="t&apos;es bien mignonne madame t&apos;as un 06">
 <node CREATED="1544886651743" ID="ID_810942339" MODIFIED="1544886796764" STYLE="bubble" TEXT="Vex&#xe9;e et te tue (29)">
 <icon BUILTIN="stop-sign"/>
 </node>
 </node>
-<node CREATED="1544886608007" FOLDED="true" ID="ID_1334700746" MODIFIED="1544901422247" STYLE="fork" TEXT="Il te reste des sandwitchs jambon/fromage">
+<node CREATED="1544886608007" ID="ID_1334700746" MODIFIED="1544908410439" STYLE="fork" TEXT="Il te reste des sandwitchs jambon/fromage">
 <node CREATED="1544886653216" ID="ID_1852474793" MODIFIED="1544886802033" STYLE="bubble" TEXT="Tu es d&#xe9;masque&#xe9; car il n&apos;y en a pas l&#xe0; bas (30)">
 <icon BUILTIN="stop-sign"/>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1544886022709" FOLDED="true" ID="ID_999194664" MODIFIED="1544901600445" STYLE="fork" TEXT="L&apos;ignorer">
+<node CREATED="1544886022709" ID="ID_999194664" MODIFIED="1544908407093" STYLE="fork" TEXT="L&apos;ignorer">
 <node CREATED="1544886414472" ID="ID_1621867860" MODIFIED="1544886521773" STYLE="bubble" TEXT="Kalash kalash (26)">
 <icon BUILTIN="stop-sign"/>
 </node>
