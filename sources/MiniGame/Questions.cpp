@@ -21,7 +21,7 @@ Questions::Questions(int id) : m_id(id)
     for(uint i = 0; i < m_graphicAnswers.size(); i++)
     {
         m_graphicAnswers[i].setFont(m_font);
-        m_graphicAnswers[i].setPosition(100, 100 + i*50);
+        m_graphicAnswers[i].setPosition(100, 150 + i*50);
         m_graphicAnswers[i].setCharacterSize(15);
         m_graphicAnswers[i].setFillColor(sf::Color::White);
     }

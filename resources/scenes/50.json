@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Chambre du grand vilain",
-    "message": "Vous êtes mort comme un bolosse à deux doigts de la victoire...",
+    "message": "Vous etes mort comme un bolosse a deux doigts de la victoire...",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/Brick.png"
 }

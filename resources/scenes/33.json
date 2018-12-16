@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Couloir",
-    "message": "Vous avez tué le garde mais vous êtes blessé à la jambe. Vous finissez par mourir dans un des couloirs",
+    "message": "Vous avez tue le garde mais vous etes blesse a la jambe. Vous finissez par mourir dans\nun des couloirs",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

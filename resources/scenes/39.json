@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Couloir",
-    "message": "Vous êtes coincés et mourrez de fin",
+    "message": "Vous etes coinces et mourrez de faim",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Cantine",
-    "message": "Elle est véxée et tue en te faisant boire de la javel.",
+    "message": "Elle est vexee et tue en te faisant boire de la javel.",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/Brick.png"
 }

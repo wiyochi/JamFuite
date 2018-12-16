@@ -1,9 +1,9 @@
 {
     "type": 0,
     "name": "Couloir",
-    "question": "Vous tombez nez à nez avec d'autres gardes.",
+    "question": "Vous tombez nez a nez avec d'autres gardes.",
     "answers": [
-        "Faire sa prière"
+        "Faire sa priere"
     ],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

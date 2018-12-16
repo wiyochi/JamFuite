@@ -3,8 +3,8 @@
     "name": "Couloir",
     "question": "Vous entrez dans un couloir et croisez une autre personne.",
     "answers": [
-        "Parler de futilité",
-        "Dire que vous êtes nouveau et perdu",
+        "Parler de futilite",
+        "Dire que vous etes nouveau et perdu",
         "Le tuer"
     ],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"

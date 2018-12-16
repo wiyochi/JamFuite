@@ -1,6 +1,6 @@
 {
     "type": 6,
     "name": "Un couloir",
-    "message": "Un garde qui vous défie sur une battaille de pouces !",
+    "message": "Un garde qui vous defie sur une bataille de pouces !",
     "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

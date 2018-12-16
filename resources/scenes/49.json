@@ -1,7 +1,7 @@
 {
     "type": 0,
     "name": "Chambre du grand vilain",
-    "question": "Vous avez éliminé le grand vilain. Toute l'organisation se dévoue à vous et vous indique la sortie paisiblement (c'est plus vraiment une fuite mais c'est tout comme).",
+    "message": "Vous avez elimine le grand vilain. Toute l'organisation se devoue à vous et\nvous indique la sortie paisiblement (c'est plus vraiment une fuite mais c'est tout comme).",
     "color": [0, 255, 0],
     "bgpath": "resources/textures/Brick.png"
 }

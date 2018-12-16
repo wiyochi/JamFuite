@@ -3,7 +3,7 @@
     "name": "Couloir",
     "question": "Vous avez trouvez un lance-roquettes, de plus une porte nous bloque. Voulez-vous l'utiliser ?",
     "answers": [
-        "Oui, détruisons la porte avec le style américain",
+        "Oui, detruisons la porte avec le style americain",
         "Non, soyons sage et prudent et devinons le code"
     ],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"

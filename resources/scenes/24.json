@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Devant une porte",
-    "message": "Vous êtes découvert, et emprisonné",
+    "message": "Vous etes decouvert, et emprisonne",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/Brick.png"
 }

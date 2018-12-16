@@ -3,7 +3,7 @@
     "name": "Entrepot",
     "question": "Vous entrez dans un entrepot,",
     "answers": [
-        "Chercher de quoi se défendre",
+        "Chercher de quoi se defendre",
         "Chercher au plus vite une porte pour en sortir",
         "Chercher un plan du complexe"
     ],

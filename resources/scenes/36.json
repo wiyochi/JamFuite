@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Une salle quelconque",
-    "message": "Vous êtes mort, rien de plus à ajouter",
+    "message": "Vous etes mort, rien de plus a ajouter",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/backgrounds/salle_1.png"
 }

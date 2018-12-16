@@ -1,7 +1,7 @@
 {
     "type": 0,
     "name": "Chambre du grand vilain",
-    "question": "Vous attendez sous le lit pendant environ 13h, vous commencez à avoir très faim.",
+    "question": "Vous attendez sous le lit pendant environ 13h, vous commencez a avoir tres faim.",
     "answers": [
         "Attendre... Encore..."
     ],

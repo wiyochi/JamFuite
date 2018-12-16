@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Couloir",
-    "message": "Vous n'êtes clairement pas Lucky Luck, vous êtes mort.",
+    "message": "Vous n'etes clairement pas Lucky Luck, vous etes mort.",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

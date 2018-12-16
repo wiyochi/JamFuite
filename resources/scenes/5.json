@@ -1,7 +1,7 @@
 {
     "type": 0,
     "name": "Couloir",
-    "question": "La porte suivante est fermée",
+    "question": "La porte suivante est fermee",
     "answers": [
         "Faire demi-tour"
     ],

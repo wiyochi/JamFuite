@@ -24,17 +24,17 @@ int getGameType(int state)
             || state == 21 || state == 22 || state == 24
             || state == 26 || state == 28 || state == 29
             || state == 30 || state == 32 || state == 33
-            || state == 36 || state == 37 || state == 39 || state == 42
-            || state == 44 || state == 47 || state == 50)
+            || state == 36 || state == 37 || state == 39 || state == 40 || state == 42
+            || state == 44 || state == 47 || state == 49 || state == 50)
         type = 2;
     return type;
 }
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 800), "Fuit Billy!!");
+    sf::RenderWindow window(sf::VideoMode(1200, 800), "Fuit Billy!!");
     bool debug = true;
-    int state = 1;
+    int state = 46;
     StoryTeller st;
     ReaderStoryLine rs;
     Node * n;
@@ -70,15 +70,14 @@ int main()
             n = n->getNode(game->getScore());
             state = n->getNodeId();
             delete game;
+            std::cout << "tYPE //// " << getGameType(state) << std::endl;
             switch (getGameType(state))
             {
                 case 0:
                     game = new Questions(state);
                     break;
                 case 2:
-    std::cout << "KALASHKLA" << std::endl;
                     game = new EndGame(state);
-    std::cout << "KALASfdffHKLA" << std::endl;
                     break;
                 case 3:
                     switch (state)
@@ -102,7 +101,7 @@ int main()
                             game = new QTE(5, 3000, new int[2]{45, 44});
                             break;
                         case 38:
-                            game = new QTE(5, 3000, new int[2]{39, 40});
+                            game = new QTE(5, 3000, new int[2]{40, 39});
                             break;
                         case 20:
                             game = new QTE(5, 3000, new int[2]{22, 21});

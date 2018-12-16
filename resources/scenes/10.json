@@ -3,7 +3,7 @@
     "name": "Couloir",
     "question": "Il se moque de vous.",
     "answers": [
-        "S'énerver contre lui",
+        "S'enerver contre lui",
         "Rester calme"
     ],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"

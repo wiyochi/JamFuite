@@ -1,7 +1,7 @@
 {
     "type": 2,
     "name": "Cantine",
-    "message": "Tu as été mis en prison... La femme de ménage t'as démasqué car ils ne servent pas de sandwichs.",
+    "message": "Tu as ete mis en prison... La femme de menage t'as demasque car ils ne servent\npas de sandwichs.",
     "color": [255, 0, 0],
     "bgpath": "resources/textures/Brick.png"
 }

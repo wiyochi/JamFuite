@@ -4,7 +4,7 @@
     "question": "Une porte est devant vous.",
     "answers": [
         "L'ouvrir",
-        "Se méfier et faire demi-tour"
+        "Se mefier et faire demi-tour"
     ],
     "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }
