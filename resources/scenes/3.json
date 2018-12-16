@@ -3,5 +3,5 @@
     "name": "Couloir",
     "message": "La personne que vous suiviez était un garde, qui vous a tué.",
     "color": [255, 0, 0],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

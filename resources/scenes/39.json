@@ -1,9 +1,7 @@
 {
-    "type": 0,
-    "name": "",
-    "question": "",
-    "answers": [
-        ""
-    ],
-    "bgpath": "resources/textures/Brick.png"
+    "type": 2,
+    "name": "Couloir",
+    "message": "Vous êtes coincés et mourrez de fin",
+    "color": [255, 0, 0],
+    "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

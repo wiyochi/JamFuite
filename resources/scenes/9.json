@@ -1,10 +1,10 @@
 {
     "type": 0,
-    "name": "",
+    "name": "Couloir",
     "question": "Il a confiance en vous.",
     "answers": [
         "En profiter pour le trahir et le tuer",
         "Raconter un mensonge pour partir"
     ],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/couloir_1.png"
 }

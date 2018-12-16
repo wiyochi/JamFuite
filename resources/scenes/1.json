@@ -6,5 +6,5 @@
         "Aller à gauche",
         "Aller à droite"
     ],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/intro.png"
 }
