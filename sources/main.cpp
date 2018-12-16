@@ -44,6 +44,13 @@ int main()
     MiniGame * game = new Questions(state);
     game->start();
 
+/*
+    MiniGame* testQ = new Questions(1);
+    int ind = 0;
+    MiniGame* testQTE = new QTE(10, 3000);
+    testQTE->start();
+*/
+
     while (window.isOpen())
     {
         sf::Event event;

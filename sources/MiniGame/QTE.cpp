@@ -2,8 +2,8 @@
 
 bool QTE::keyPressed = false;
 
-QTE::QTE(int nb) :
-    m_period(sf::milliseconds(3000)),
+QTE::QTE(int nb, int period) :
+    m_period(sf::milliseconds(period)),
     m_end(false),
     m_intro(true),
     m_cpt(0),

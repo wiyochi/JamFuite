@@ -10,7 +10,7 @@
 class QTE : public MiniGame
 {
 public:
-    QTE(int nb);
+    QTE(int nb, int period);
     void start();
     void update(sf::Window& window);
     void newKey(sf::Keyboard::Key except);
