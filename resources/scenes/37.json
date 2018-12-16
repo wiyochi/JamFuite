@@ -3,5 +3,5 @@
     "name": "Entrepot",
     "message": "Vous avez reussit a trouver un plan,\ncependant vous avez perdu trop de temps a le lire et on vous a trouve...",
     "color": [255, 0, 0],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/entrepot.png"
 }

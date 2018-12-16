@@ -32,7 +32,7 @@ int getGameType(int state)
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(1200, 800), "Fuit Billy!!");
+    sf::RenderWindow window(sf::VideoMode(1200, 800), "Fuis Billy!!");
     bool debug = true;
     int state = 1;
     StoryTeller st;

@@ -7,5 +7,5 @@
         "Chercher au plus vite une porte pour en sortir",
         "Chercher un plan du complexe"
     ],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/entrepot.png"
 }

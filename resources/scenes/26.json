@@ -3,5 +3,5 @@
     "name": "Cantine",
     "message": "Kalash Kalash, elle t'as abattu comme un chien.",
     "color": [255, 0, 0],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/cantine.png"
 }

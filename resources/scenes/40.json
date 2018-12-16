@@ -3,5 +3,5 @@
     "name": "Exterieur",
     "message": "Felicitation, vous avez trouve une porte ouverte",
     "color": [0, 255, 0],
-    "bgpath": "resources/textures/Brick.png"
+    "bgpath": "resources/textures/backgrounds/entrepot.png"
 }
