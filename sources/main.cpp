@@ -41,7 +41,24 @@ int main()
 
     rs.loadAndInjectData("./resources/story.json", st);
 
+    std::cout << "####################################################" << std::endl;
+    for(auto node : st.accesCaca())
+    {
+        std::cout << "Node: " << node->getNodeId() << " :" << std::endl;
+        for(auto child : node->getNodes())
+        {
+            std::cout << "\t" << child->getNodeId();
+        }
+        std::cout << std::endl;
+    }
+
     n = st.getNode(state);
+
+    for(auto no : n->getNodes())
+    {
+        std::cout << "Child: " << no->getNodeId() << std::endl;
+    }
+
     MiniGame * game = new Questions(state);
     game->start();
 
@@ -59,13 +76,22 @@ int main()
         }
         else
         {
-            //n = n->getNode(game->getScore());
-            n = st.getNode(game->getScore());
+            std::cout << "Input : " << game->getScore() << std::endl;;
+            n = n->getNode(game->getScore());
+            //n = st.getNode(game->getScore());
 
             if(n == nullptr)
             {
                 std::cout << "NULL" << std::endl;
             }
+
+            std::cout << "NodeInfo: " << n->getNodeId() << "[";
+            for(Node* child : n->getNodes())
+            {
+                std::cout << child->getNodeId() << ",";
+            }
+            std::cout << "]" << std::endl;
+
             state = n->getNodeId();
             std::cout << "STATE new : " << state << std::endl;
             delete game;
@@ -78,7 +104,7 @@ int main()
                     //game = new EndGame(state);
                     break;
                 case 3:
-                    game = new QTE(10, 3000);
+                    game = new QTE(10, 3000, new int[2]{33, 32});
                     break;
                 case 4:
                     //game = new CodeGame(state);

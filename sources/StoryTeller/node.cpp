@@ -7,20 +7,14 @@ int Node::getNodeId() const
     return nodeId;
 }
 
-std::set<Node *> &Node::getNodes()
+std::vector<Node *> &Node::getNodes()
 {
     return nextNodes;
 }
 
 Node *Node::getNode(int nodeId)
 {
-    std::set<Node *>::iterator result;
-
-    result = std::find_if(nextNodes.begin(), nextNodes.end(), [&nodeId](Node *n) -> bool {
-        return n->getNodeId() == nodeId;
-    });
-
-    return result == nextNodes.end() ? nullptr : *result;
+    return (nodeId-1) < nextNodes.size() ? nextNodes[nodeId-1] : nullptr;
 }
 
 bool Node::operator==(const Node &n)

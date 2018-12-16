@@ -6,17 +6,18 @@
 
 #include <algorithm>
 #include <vector>
-#include <set>
+#include <vector>
 
 class StoryTeller
 {
-  std::set<Node *> storyLine;
+  std::vector<Node *> storyLine;
 
 public:
   Node *createNode(int);
   Node *getNode(int);
   void createNodeAndDependencies(int, std::vector<int>);
-  std::set<Node *> accesCaca();
+  void createDependencies(int, std::vector<int>);
+  std::vector<Node *> accesCaca();
   ~StoryTeller();
 };
 

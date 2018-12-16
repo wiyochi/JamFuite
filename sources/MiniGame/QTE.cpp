@@ -2,13 +2,15 @@
 
 bool QTE::keyPressed = false;
 
-QTE::QTE(int nb, int period) :
+QTE::QTE(int nb, int period, int resNode[2]) :
     m_period(sf::milliseconds(period)),
-    m_end(false),
+    m_endQTE(false),
     m_intro(true),
     m_cpt(0),
     m_nbOfKey(nb),
-    m_goodKey(false)
+    m_goodKey(false),
+    nodeWin(resNode[0]),
+    nodeLose(resNode[1])
 {
     srand(time(NULL));
 
@@ -53,7 +55,7 @@ void QTE::update(sf::Window& window)
     }
     else
     {
-        if(!m_end && m_cpt < m_nbOfKey)
+        if(!m_endQTE && m_cpt < m_nbOfKey)
         {
             if(!keyPressed && sf::Keyboard::isKeyPressed(m_key) && m_clock.getElapsedTime().asMilliseconds() < m_period.asMilliseconds())
             {
@@ -64,7 +66,7 @@ void QTE::update(sf::Window& window)
             }
             else if((!keyPressed && isOtherKeyPressed(m_key)) || (m_clock.getElapsedTime().asMilliseconds() > m_period.asMilliseconds()))
             {
-                m_end = true;
+                m_endQTE = true;
             }
             else if(!sf::Keyboard::isKeyPressed(m_key) && !isOtherKeyPressed(m_key))
             {
@@ -73,14 +75,18 @@ void QTE::update(sf::Window& window)
         }
     }
 
-    if(m_end)
+    if(m_endQTE)
     {
-        m_graphicKey.setString("PERDU");
+        m_graphicKey.setString("PERDU!");
+        m_score = nodeLose;
+        m_end = true;
     }
 
     if(m_cpt >= m_nbOfKey)
     {
-        m_graphicKey.setString("GAGNE");
+        m_score = nodeWin;
+        m_graphicKey.setString("GAGNE!");
+        m_end = true;
     }
 }
 

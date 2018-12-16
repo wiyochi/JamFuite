@@ -4,30 +4,24 @@
 Node *StoryTeller::createNode(int nodeId)
 {
     Node *n = new Node(nodeId);
-    storyLine.insert(n);
+    storyLine.push_back(n);
 
     return n;
 }
 
 Node *StoryTeller::getNode(int nodeId)
 {
-    std::set<Node *>::iterator result;
-
-    result = std::find_if(storyLine.begin(), storyLine.end(), [&nodeId](Node *n) -> bool {
-        return n->getNodeId() == nodeId;
-    });
-
-    return result == storyLine.end() ? nullptr : *result;
+    return nodeId < storyLine.size() ? storyLine[nodeId-1] : nullptr;
 }
 
-std::set<Node *> StoryTeller::accesCaca()
+std::vector<Node *> StoryTeller::accesCaca()
 {
     return storyLine;
 }
 
 void StoryTeller::createNodeAndDependencies(int node, std::vector<int> nextNodes)
 {
-    std::set<Node *>::iterator it;
+    std::vector<Node *>::iterator it;
 
     it = std::find_if(storyLine.begin(), storyLine.end(), [node](Node *n) -> bool {
         return n->getNodeId() == node;
@@ -52,13 +46,21 @@ void StoryTeller::createNodeAndDependencies(int node, std::vector<int> nextNodes
         else //Le noeud existe
             tmp = *it;
 
-        n->getNodes().insert(tmp); //On insere le ptr dans la liste de noeuds suivants
+        n->getNodes().push_back(tmp); //On insere le ptr dans la liste de noeuds suivants
+    }
+}
+
+void StoryTeller::createDependencies(int indexNode, std::vector<int> indexNextNodes)
+{
+    for(int i : indexNextNodes)
+    {
+        storyLine[indexNode-1]->getNodes().push_back(storyLine[i-1]);
     }
 }
 
 StoryTeller::~StoryTeller()
 {
-    std::set<Node *>::iterator it;
+    std::vector<Node *>::iterator it;
 
     for (it = storyLine.begin(); it != storyLine.end(); it++)
     {
